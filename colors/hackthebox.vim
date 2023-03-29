@@ -453,10 +453,10 @@ if has("nvim")
   call s:h("DiagnosticUnderlineInfo" , { "style" : "undercurl", "sp" : s:blue })   " Used to underline 'Information' diagnostics
   call s:h("DiagnosticUnderlineHint" , { "style" : "undercurl", "sp" : s:cyan })   " Used to underline 'Hint' diagnostics
 
-  call s:h("DiagnosticVirtualTextError" , { "bg" : s:dark_red, "fg" : s:red })      " Used for 'Error' diagnostic virtual text
-  call s:h("DiagnosticVirtualTextWarn" , { "bg" : s:dark_yellow, "fg" : s:yellow }) " Used for 'Warning' diagnostic virtual text
-  call s:h("DiagnosticVirtualTextInfo" , { "bg" : s:blue, "fg" : s:blue })          " Used for 'Information' diagnostic virtual text
-  call s:h("DiagnosticVirtualTextHint" , { "bg" : s:cyan, "fg" : s:cyan })          " Used for 'Hint' diagnostic virtual text
+  call s:h("DiagnosticVirtualTextError" , { "bg" : "NONE", "fg" : s:red })      " Used for 'Error' diagnostic virtual text
+  call s:h("DiagnosticVirtualTextWarn" , { "bg" : "NONE", "fg" : s:yellow }) " Used for 'Warning' diagnostic virtual text
+  call s:h("DiagnosticVirtualTextInfo" , { "bg" : "NONE", "fg" : s:blue })          " Used for 'Information' diagnostic virtual text
+  call s:h("DiagnosticVirtualTextHint" , { "bg" : "NONE", "fg" : s:cyan })          " Used for 'Hint' diagnostic virtual text
 
   " This is the old way of Lsp diagnostics highlights
   call s:h("LspDiagnosticsVirtualTextError",{"fg": s:dark_red})
